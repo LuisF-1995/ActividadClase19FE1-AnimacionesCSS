@@ -33,8 +33,6 @@ nav ul {
     display: flex; 
     justify-content: center;
     list-style: none;
-    /* padding: 0px;
-    margin-left: 10px;          NO son necesarias porque usamos flex*/
 }
 nav ul li {
     margin: 20px;
@@ -53,11 +51,12 @@ nav ul li a:before{
     position:absolute;
     bottom:-10px; 
     width: 0%;
-    height: 0%;
-    /* transition: ; */
+    height: 10%;
+    transition: ease-out 0.5s;
 }
 nav ul li a:hover::before{
-    width: fixed;
+    width: 100%;
+    transition: ease-in 0.3s;
 }
 
 /* Barra redes */
@@ -88,10 +87,6 @@ nav ul li a:hover::before{
 
 /*Para agregar efecto a barra lateral*/
 .social ul li a:hover{
-    /*transform:scaleX(1);
-    padding-left: 2rem;
-    background-color: #000;*/
-
     transform: scaleX(1);
     background-color: black;
     padding-left: 2rem;
